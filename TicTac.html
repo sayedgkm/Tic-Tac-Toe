@@ -1,0 +1,63 @@
+<html>
+
+  <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel = "stylesheet" type = "text/css" href="TicTac.css"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="TicTac.js"></script>
+  </head>
+
+  <body>
+    <div class="homepage">
+      <div class="container">
+        <h1>Tic Tac Toe</h1>
+        <div class="row">
+            <div class="text-right col-md-6">Your Letter</div>
+            <div id="letter-choose" class = "text-left col-md-4 custom-dropdown">
+              <select>
+                  <option value="X">X</option>
+                  <option value="O">O</option>
+              </select>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="text-right col-md-6">First Move</div>
+          <div id="first-move"class = "text-left col-md-4 custom-dropdown">
+            <select>
+                <option value="you">You</option>
+                <option value="computer">Computer</option>
+            </select>
+          </div>
+        </div>
+        <button id="start-game">START PLAYING</button>
+      </div>
+    </div>
+    <div class="board" hidden>
+      <div class="container">
+        <div class = "box">
+          <div class = "row">
+              <div class="cell col-md-4" id="00">X</div>
+              <div class="cell col-md-4" id="01"></div>
+              <div class="cell col-md-4" id="02"></div>
+          </div>
+          <div class="row">
+              <div class="cell col-md-4" id="10"></div>
+              <div class="cell col-md-4" id="11"></div>
+              <div class="cell col-md-4" id="12"></div>
+          </div>
+          <div class="row">
+              <div class="cell col-md-4" id="20"></div>
+              <div class="cell col-md-4" id="21"></div>
+              <div class="cell col-md-4" id="22"></div>
+          </div>
+         </div>
+      </div>
+      <div>
+        <button class="back">Back</button>
+      </div>
+    </div>
+    <h1 id = "status" hidden>You have won</h1>
+  </body>
+
+</html>
